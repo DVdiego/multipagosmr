@@ -161,7 +161,8 @@
 #spacing-title{
 
 	color: white;
-	font-size: 3rem;
+	font-size: 4rem;
+	padding: 0 0 10px 0;
 
 }
 
@@ -204,7 +205,7 @@
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	border: none;
 }
 
@@ -234,6 +235,16 @@
 
 	    font-weight: 500;
 }
+
+
+
+/*---------maps-----------*/
+iframe {
+ width: 100%;
+ height: 450px;
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2928,7 +2939,7 @@ input, select, textarea {
 
 #carousel > div > div.carousel-item > img {
 	width: 100%;
-	height: 450px;
+	height: 40%;
 }
 
 #carousel > ul {
