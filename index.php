@@ -376,38 +376,20 @@ function get_Data(){
 
 function xmlParser(){
 
+	//cargar el fichero xml en un objeto del tipo DOM
 	$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
-
-
 	$dom = new DomDocument;
 	@$dom->loadHTMLfile($url);
+	//almacenar la estructura xml obtenida, en una variable
 	$file = $dom->saveXML();
-	// var_dump($file);
+
+	//parsear el fichero xml
 	$xml = simplexml_load_string($file, "SimpleXMLElement", LIBXML_NOCDATA);
-	$json = json_encode($xml);
-	$lista = json_decode($json,TRUE);
-	$xml_aux = "";
-	// var_dump("xml:".$xml."<br>");
-	// var_dump("json:".$json."<br>");
-	//var_dump("array:".$array."<br>");
-	// print_r($xml);
 
+	//obtener el array que contiene los datos de interes
 	$elemento = $xml->body[0];
-
-
 	$value = (string) $xml->body[0];
-
-	// print_r($elemento);
-
-
 	$item = $elemento->p;
-
-	// print_r($item);
-	echo "el item= ".$item;
-
-	$item2 = "'$item'";
-
-	echo ' el item2 = '.$item2;
 
 	$json2 = json_decode($item, true);
 
@@ -415,22 +397,6 @@ function xmlParser(){
 	echo "<br>";
 	echo "Compra Dolares: ".$json2['compraDolares'];
 	echo "Venta Dolares: ".$json2['ventaDolares'];
-
-
-	// foreach($lista as $elemento => $detalles)
-	// {
-	// 	echo "<h1> $elemento </h1>";
-	//
-	//     foreach($detalles as $tag => $item)
-	// 	{
-	// 		echo "<p> $tag </p>";
-	//
-	//
-	// 	}
-	// }
-
-
-
 
 
 }
