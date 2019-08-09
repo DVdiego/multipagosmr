@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 
+
 <html lang="es">
 	<head>
 		<title>MultipagosMR</title>
@@ -59,7 +60,22 @@
 			      </ul>
 			    </div>
 			  </div>
+
+
+
 			</nav>
+			<?php
+			// $value_dollar = getHTMLId("https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP",'compraDolares');
+
+		//getXML();
+		//	get_Data();
+
+		xmlParser();
+
+
+				// echo "El valor del dolar es:\n";
+				// echo $value_dollar;
+			 ?>
 
 			<!-- Banner -->
 				<!-- <section id="banner">
@@ -278,3 +294,148 @@
 
 	</body>
 </html>
+<?php
+
+function getHTMLId(){
+
+		$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
+
+  $xmlDoc = new DomDocument;
+  $html = @$xmlDoc->loadHTMLfile($url);
+    if($html == false){
+      return false;
+    }
+		$x = $xmlDoc->documentElement;
+		$elemento = $x->getElementsByTagName('body');
+
+
+
+		$dolares = $elemento->item(0)->getElementsByTagName('compraDolares');
+
+
+		var_dump($dolares);
+
+
+		$variable = "";
+
+		foreach ($elemento AS $x){
+			print $x->nodeName . " = " . $x->nodeValue . "<br />";
+			$variable = $x->nodeValue;
+
+
+
+		}
+
+		// echo gettype($variable);
+
+		$array = explode(",", $variable);
+
+
+
+}
+
+
+
+function getXML(){
+
+
+	$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
+	$xml = @simplexml_load_string($url, "SimpleXMLElement", LIBXML_NOCDATA);
+	$json = json_encode($xml);
+	$array = json_decode($json,TRUE);
+
+	var_dump($xml);
+
+	foreach ($array as $x) {
+
+		echo "array: ".$x;
+
+	}
+
+}
+
+function get_Data(){
+
+	$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
+	$ch = curl_init();
+	$timeout = 5;
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+	$data = curl_exec($ch);
+	curl_close($ch);
+
+
+	$xml = simplexml_load_string($data) or die("Something is wrong");
+
+	print_r($xml);
+	var_dump($xml->Result);
+	// return $xml;
+}
+
+
+function xmlParser(){
+
+	$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
+
+
+	$dom = new DomDocument;
+	@$dom->loadHTMLfile($url);
+	$file = $dom->saveXML();
+	// var_dump($file);
+	$xml = simplexml_load_string($file, "SimpleXMLElement", LIBXML_NOCDATA);
+	$json = json_encode($xml);
+	$lista = json_decode($json,TRUE);
+	$xml_aux = "";
+	// var_dump("xml:".$xml."<br>");
+	// var_dump("json:".$json."<br>");
+	//var_dump("array:".$array."<br>");
+	// print_r($xml);
+
+	$elemento = $xml->body[0];
+
+
+	$value = (string) $xml->body[0];
+
+	// print_r($elemento);
+
+
+	$item = $elemento->p;
+
+	// print_r($item);
+	echo "el item= ".$item;
+
+	$item2 = "'$item'";
+
+	echo ' el item2 = '.$item2;
+
+	$json2 = json_decode($item, true);
+
+	var_dump($json2);
+	echo "<br>";
+	echo "Compra Dolares: ".$json2['compraDolares'];
+	echo "Venta Dolares: ".$json2['ventaDolares'];
+
+
+	// foreach($lista as $elemento => $detalles)
+	// {
+	// 	echo "<h1> $elemento </h1>";
+	//
+	//     foreach($detalles as $tag => $item)
+	// 	{
+	// 		echo "<p> $tag </p>";
+	//
+	//
+	// 	}
+	// }
+
+
+
+
+
+}
+
+
+
+
+?>
