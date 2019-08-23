@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<!-- jQuery library -->
@@ -65,25 +66,17 @@
 
 			</nav>
 			<?php
-			// $value_dollar = getHTMLId("https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP",'compraDolares');
 
-		//getXML();
-		//	get_Data();
+				$tasas = xmlParser();
 
-		xmlParser();
-
-
-				// echo "El valor del dolar es:\n";
-				// echo $value_dollar;
+				echo '<section id="services-header" class="wrapperx style col-lg-12 col-md-12 col-sm-12 col-12">
+										<div class="exchange">';
+				echo '<img src="images/tipos-logo-sm.png" alt="tipos logo">';
+				echo '        <span>&raquo;Tipos de cambio:  $US Compra = '.$tasas['compraDolares'].'₡ | $US Venta = '.$tasas['ventaDolares'].'₡ </span>';
+				echo'
+										</div>
+							</section>';
 			 ?>
-
-			<!-- Banner -->
-				<!-- <section id="banner">
-					<header>
-						<h2>Worktime Control <em>Applicación web para controlar la jornada laboral <a href="http://isoftworktime.com/demo">Demo aquí</a></em></h2>
-						<a href="#projects" class="button">Infórmate más</a>
-					</header>
-				</section> -->
 
 
 
@@ -104,7 +97,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images/3slide.png" class="img-responsive" alt="Chicago" >
+					<img src="images/3slide.png" class="img-responsive" alt="slider1" >
 					<div class="carousel-caption">
 						<header>
 
@@ -112,20 +105,20 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images/5slide.png" class="img-responsive" alt="Chicago" >
+					<img src="images/5slide.png" class="img-responsive" alt="slider2" >
 					<div class="carousel-caption">
 						<header>
 
 						</header>
 					</div>
 				</div>
-				<div class="carousel-item">
-					<img src="images/7slide.png" class="img-responsive" alt="Chicago" >
+				<!-- <div class="carousel-item">
+					<img src="images/7slide.png" class="img-responsive" alt="slider3" >
 					<div class="carousel-caption">
 						<header>
 						</header>
 					</div>
-				</div>
+				</div> -->
 
 
 			</div>
@@ -156,15 +149,19 @@
 						<div class="row gtr-200">
 							<section class="col-lg-4 col-md-4 col-sm-4 col-6">
 								<div class="box highlight">
-									<img id="imgServicios" src="images/Luz.png"/>
+									<!-- <img id="imgServicios" src="images/Luz.png"/> -->
+									<i class='far fa-lightbulb' style='font-size:8rem;color:#525252'></i>
 									<h3>Luz</h3>
+
+
 									<p></p>
 								</div>
 							</section>
 
 							<section class="col-lg-4 col-md-4 col-sm-4 col-6">
 								<div class="box highlight">
-									<img id="imgServicios" src="images/Agua.png"  />
+									<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
+									<i class='fas fa-water' style='font-size:8rem;color:#525252'></i>
 									<h3>Agua</h3>
 
 								</div>
@@ -172,15 +169,29 @@
 
 							<section class="col-lg-4 col-md-4 col-sm-4 col-6">
 								<div class="box highlight">
-									<img id="imgServicios" src="images/Telefonia.png"  />
+									<!-- <img id="imgServicios" src="images/Telefonia.png"  /> -->
+									<i class='fa fa-mobile-phone' style='font-size:8rem;color:#525252'></i>
 									<h3>Teléfono</h3>
+
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
+										<ul class="dropdown-menu">
+											<li><img src="images/kolbi.png"></li>
+
+											<li><img src="images/claro.png"></li>
+											<li class="divider"></li>
+											<li><img src="images/movistar.png"></li>
+										</ul>
+									</div>
+
 
 								</div>
 							</section>
 
 							<section class="col-lg-4 col-md-4 col-sm-4 col-6">
 								<div class="box highlight">
-									<img id="imgServicios" src="images/Tarjetas-de-Credito.png"  />
+									<!-- <img id="imgServicios" src="images/Tarjetas-de-Credito.png"  /> -->
+									<i class='far fa-credit-card' style='font-size:8rem;color:#525252'></i>
 									<h3>Tarjetas</h3>
 
 								</div>
@@ -188,7 +199,8 @@
 
 							<section class="col-lg-4 col-md-4 col-sm-4 col-6">
 								<div class="box highlight">
-									<img id="imgServicios" src="images/Bancos.png"  />
+									<!-- <img id="imgServicios" src="images/Bancos.png"  /> -->
+									<i class='fa fa-bank' style='font-size:8rem;color:#525252'></i>
 									<h3>Bancos</h3>
 
 								</div>
@@ -196,7 +208,9 @@
 
 							<section class="col-lg-4 col-md-4 col-sm-4 col-6">
 								<div class="box highlight">
-									<img id="imgServicios" src="images/Bancos.png"  />
+									<!-- <img id="imgServicios" src="images/Bancos.png"  /> -->
+									<i class='fas fa-landmark' style='font-size:8rem;color:#525252'></i>
+
 									<h3>Créditos</h3>
 
 								</div>
@@ -296,84 +310,6 @@
 </html>
 <?php
 
-function getHTMLId(){
-
-		$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
-
-  $xmlDoc = new DomDocument;
-  $html = @$xmlDoc->loadHTMLfile($url);
-    if($html == false){
-      return false;
-    }
-		$x = $xmlDoc->documentElement;
-		$elemento = $x->getElementsByTagName('body');
-
-
-
-		$dolares = $elemento->item(0)->getElementsByTagName('compraDolares');
-
-
-		var_dump($dolares);
-
-
-		$variable = "";
-
-		foreach ($elemento AS $x){
-			print $x->nodeName . " = " . $x->nodeValue . "<br />";
-			$variable = $x->nodeValue;
-
-
-
-		}
-
-		// echo gettype($variable);
-
-		$array = explode(",", $variable);
-
-
-
-}
-
-
-
-function getXML(){
-
-
-	$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
-	$xml = @simplexml_load_string($url, "SimpleXMLElement", LIBXML_NOCDATA);
-	$json = json_encode($xml);
-	$array = json_decode($json,TRUE);
-
-	var_dump($xml);
-
-	foreach ($array as $x) {
-
-		echo "array: ".$x;
-
-	}
-
-}
-
-function get_Data(){
-
-	$url = 'https://bncrappsmobappprod.azurewebsites.net/api/ConsultaTipoCambios?pCanal=IBP';
-	$ch = curl_init();
-	$timeout = 5;
-	curl_setopt($ch, CURLOPT_URL, $url);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-	$data = curl_exec($ch);
-	curl_close($ch);
-
-
-	$xml = simplexml_load_string($data) or die("Something is wrong");
-
-	print_r($xml);
-	var_dump($xml->Result);
-	// return $xml;
-}
-
-
 function xmlParser(){
 
 	//cargar el fichero xml en un objeto del tipo DOM
@@ -391,17 +327,11 @@ function xmlParser(){
 	$value = (string) $xml->body[0];
 	$item = $elemento->p;
 
-	$json2 = json_decode($item, true);
+	$json = json_decode($item, true);
 
-	var_dump($json2);
-	echo "<br>";
-	echo "Compra Dolares: ".$json2['compraDolares'];
-	echo "Venta Dolares: ".$json2['ventaDolares'];
-
+	return $json;
 
 }
-
-
 
 
 ?>
