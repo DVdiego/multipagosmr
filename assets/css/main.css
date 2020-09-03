@@ -1,6 +1,43 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+/*imagenes iconos de información*/
+
+/* #services > div > div > section:nth-child(1) > div > div > ul > li > img {
+	width: 100px;
+}
+
+
+#services > div > div > section:nth-child(1) > div > div > ul.dropdown-menu.show {
+	display: inline-flex;
+} */
+
+
+#services > div > div > section > div > div > div > div > img {
+	width: 4.66rem;
+}
+#services > div > div > section > div > div > ul > div > div > img {
+	width: 4.66rem;
+}
+
+.dropdown-menu{
+	padding: 0 !important;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 3px;
+  font-size: 30px;
+  text-align: center;
+}
 /*-------------------tarjetas de equipo--------------------*/
 .team-card{
 	text-align: center;
@@ -56,7 +93,9 @@
 
 
 .img-responsive{
-	width: 16rem;
+	width: 50rem;
+	display: block;
+	margin: auto;
 }
 
 
@@ -162,7 +201,7 @@
 #spacing-title{
 
 	color: white;
-	font-size: 4rem;
+	font-size: 2rem;
 	padding: 0 0 10px 0;
 
 }
@@ -206,7 +245,7 @@
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	border: none;
 }
 
@@ -274,7 +313,7 @@ iframe {
     border-left: .3em solid transparent;
 }
 
-/* #services > div > div > section:nth-child(1) > div > div > ul{
+#services > div > div > section:nth-child(1) > div > div > ul{
 
 	position: absolute;
 	will-change: transform;
@@ -282,7 +321,11 @@ iframe {
 	left: 0px;
 	transform: translate3d(20px, 38px, 0px) !important;
 
-} */
+}
+
+.carousel-inner{
+	background-color: #d2d1d1;
+}
 
 
 html, body, div, span, applet, object,
@@ -2984,11 +3027,12 @@ input, select, textarea {
 	bottom: 0 !important;
 }
 
+/*
 #carousel > div > div.carousel-item > img {
 	width: 100%;
 	height: 35%;
 }
-
+*/
 #carousel > ul {
 	margin: 10px 0px 0px -2px !important;
 }
@@ -3053,7 +3097,7 @@ input, select, textarea {
 }
 
 	.wrapper {
-		padding: 3em 0 1em 0;
+		padding: 1em 0 .5em 0;
 	}
 
 		.wrapper.style1 {
@@ -3061,7 +3105,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #1767b7;
+			background-color: #0a4b8c;
 			/* background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png"); */
 			background-position: top left,						bottom left,					top left;
 			background-size: 100% 6em,						100% 6em,						auto;
@@ -3661,12 +3705,12 @@ input, select, textarea {
 
 			float: none;
 		}
-
+/*
 		#carousel > div > div.carousel-item > img {
 	    width: 100%;
 	    height: 300px;
 		}
-
+*/
 
 		#services > div > div > section > div > h3{
 
@@ -3742,12 +3786,27 @@ input, select, textarea {
 
 	}
 
-
-
-	@media (max-width: 767px){
-		.team-card{
-			margin-bottom: 60px;
+	@media (max-width: 1024px){
+			.img-responsive {
+		    width: 100%;
+		    display: block;
+		    margin: auto;
 		}
+
+		#services > div > div > section > div > i{
+
+			font-size: 3rem !important;
+    	color: #525252;
+		}
+	}
+
+
+	@media (max-width: 991px){
+
+		#page-wrapper > nav > div > button{
+			    background-color: #1767b7;
+		}
+
 	}
 
 	@media (min-width: 769px){
