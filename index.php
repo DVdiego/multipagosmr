@@ -37,7 +37,7 @@ include('php/currency.php');
 
 		<div id="page-wrapper">
 			<!-- Navigation -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+			<nav class="navbar navbar-expand-lg navbar-dark static-top">
 
 			  <div class="container">
 			    <a class="navbar-brand" href="#">
@@ -156,239 +156,341 @@ include('php/currency.php');
 			<div class="container">
 					<div class="row">
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Luz.png"/> -->
-								<i class='fa fa-lightbulb-o' style='font-size:3rem;color:#525252'></i>
-								<h3>Luz</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/ice.png" alt="paga-ICE"></div>
-											<div class="grid-item"><img src="images/cnfl.png" alt="paga-cnfl"></div>
-											<div class="grid-item"><img src="images/esph.png"  alt="paga-esph"></div>
-											<div class="grid-item"><img src="images/coopelesca.png"  alt="paga-coopelesca"></div>
-											<div class="grid-item"><img src="images/jasec.png"  alt="paga-jasec"></div>
-											<div class="grid-item"><img src="images/coopesantos.png"  alt="paga-coopesantos"></div>
-											<div class="grid-item"><img src="images/coopeguanacaste.png"  alt="paga-coopeguanacaste"></div>
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+											<i class='fa fa-lightbulb-o' style='font-size:3rem;color:#525252'></i>
+											<h3>Luz</h3>
 										</div>
-									</ul>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/ice.png" alt="paga-ICE"></div>
+												<div class="grid-item"><img src="images/cnfl.png" alt="paga-cnfl"></div>
+												<div class="grid-item"><img src="images/esph.png"  alt="paga-esph"></div>
+												<div class="grid-item"><img src="images/coopelesca.png"  alt="paga-coopelesca"></div>
+												<div class="grid-item"><img src="images/jasec.png"  alt="paga-jasec"></div>
+												<div class="grid-item"><img src="images/coopesantos.png"  alt="paga-coopesantos"></div>
+												<div class="grid-item"><img src="images/coopeguanacaste.png"  alt="paga-coopeguanacaste"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
-								<i class='fas fa-water' style='font-size:3rem;color:#525252'></i>
-								<h3>Agua</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-										  <div class="grid-item"><img src="images/aya.png"  alt="paga-AyA"></div>
-										  <div class="grid-item"><img src="images/esph.png"  alt="paga-ESPH"></div>
-										  <div class="grid-item"><img src="images/eco.png"  alt="paga-ECO"></div>
-										</div>
-									</ul>
+
+
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fas fa-water' style='font-size:3rem;color:#525252'></i>
+										<h3>Agua</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/aya.png"  alt="paga-AyA"></div>
+											  <div class="grid-item"><img src="images/esph.png"  alt="paga-ESPH"></div>
+											  <div class="grid-item"><img src="images/eco.png"  alt="paga-ECO"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
-								<i class='fas fa-percent' style='font-size:3rem;color:#525252'></i>
-								<h3 style="font-size: 1.6rem;">Municipalidad</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/msj.png"  alt="paga-municipalidad-san jose"></div>
-											<div class="grid-item"><img src="images/mh.png"  alt="paga-ministerio-hacienda"></div>
-										</div>
-									</ul>
+
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fas fa-percent' style='font-size:3rem;color:#525252'></i>
+										<h3 style="font-size: 1.3rem;">Municipalidad</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/msj.png"  alt="paga-municipalidad-san jose"></div>
+												<div class="grid-item"><img src="images/mh.png"  alt="paga-ministerio-hacienda"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
-								<i class='fa fa-user-md' style='font-size:3rem;color:#525252'></i>
-								<h3>Seguros</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/ccss.png" alt="paga-ccss"></div>
-											<div class="grid-item"><img src="images/ins.png" alt="paga-ins"></div>
-											<div class="grid-item"><img src="images/mn.png" alt="paga-magisterio-nacional"></div>
-											<div class="grid-item"><img src="images/oceanica.png" alt="paga-oceanica"></div>
-											<div class="grid-item"><img src="images/mapfre.png"  alt="paga-mapfre"></div>
-										</div>
-									</ul>
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fa fa-user-md' style='font-size:3rem;color:#525252'></i>
+										<h3>Seguros</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/ccss.png" alt="paga-ccss"></div>
+												<div class="grid-item"><img src="images/ins.png" alt="paga-ins"></div>
+												<div class="grid-item"><img src="images/mn.png" alt="paga-magisterio-nacional"></div>
+												<div class="grid-item"><img src="images/oceanica.png" alt="paga-oceanica"></div>
+												<div class="grid-item"><img src="images/mapfre.png"  alt="paga-mapfre"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Telefonia.png"  /> -->
-								<i class='fas fa-mobile-alt' style='font-size:3rem;color:#525252'></i>
-								<h3>Teléfono & Internet</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-										  <div class="grid-item"><img src="images/kolbi.png" alt="paga-kolbi"></div>
-										  <div class="grid-item"><img src="images/claro.png" alt="paga-claro"></div>
-										  <div class="grid-item"><img src="images/movistar.png" alt="paga-movistar"></div>
-										  <div class="grid-item"><img src="images/esph.png" alt="paga-esph"></div>
-											<div class="grid-item"><img src="images/cc.png" alt="paga-comunicacion-constante"></div>
-											<div class="grid-item"><img src="images/luminet.png" alt="paga-luminet"></div>
-											<div class="grid-item"><img src="images/racsa.png" alt="paga-racsa"></div>
-											<div class="grid-item"><img src="images/tigo.png" alt="paga-tigo"></div>
-											<div class="grid-item"><img src="images/telecable.png" alt="paga-telecable"></div>
-											<div class="grid-item"><img src="images/cabletica.png" alt="paga-cabletica"></div>
-											<div class="grid-item"><img src="images/jasec.png" alt="paga-jasec"></div>
-											<div class="grid-item"><img src="images/coopelesca.png" alt="paga-coopelesca"></div>
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+											<i class='fas fa-mobile-alt' style='font-size:3rem;color:#525252'></i>
+											<h3 style="font-size: 1.3rem;">Teléfono & Internet</h3>
 										</div>
-									</ul>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/kolbi.png" alt="paga-kolbi"></div>
+											  <div class="grid-item"><img src="images/claro.png" alt="paga-claro"></div>
+											  <div class="grid-item"><img src="images/movistar.png" alt="paga-movistar"></div>
+											  <div class="grid-item"><img src="images/esph.png" alt="paga-esph"></div>
+												<div class="grid-item"><img src="images/cc.png" alt="paga-comunicacion-constante"></div>
+												<div class="grid-item"><img src="images/luminet.png" alt="paga-luminet"></div>
+												<div class="grid-item"><img src="images/racsa.png" alt="paga-racsa"></div>
+												<div class="grid-item"><img src="images/tigo.png" alt="paga-tigo"></div>
+												<div class="grid-item"><img src="images/telecable.png" alt="paga-telecable"></div>
+												<div class="grid-item"><img src="images/cabletica.png" alt="paga-cabletica"></div>
+												<div class="grid-item"><img src="images/jasec.png" alt="paga-jasec"></div>
+												<div class="grid-item"><img src="images/coopelesca.png" alt="paga-coopelesca"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
-								<i class='fas fa-satellite-dish	' style='font-size:3rem;color:#525252'></i>
-								<h3>TvSatelital & Cable </h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/cabletica.png" alt="paga-cabletica"></div>
-											<div class="grid-item"><img src="images/telecable.png" alt="paga-telecable"></div>
-											<div class="grid-item"><img src="images/tigo.png" alt="paga-tigo"></div>
-											<div class="grid-item"><img src="images/sky.png" alt="paga-sky"></div>
-											<div class="grid-item"><img src="images/cablevision.png" alt="paga-cablevision"></div>
-											<div class="grid-item"><img src="images/clarotv.png" alt="paga-clarotv"></div>
-											<div class="grid-item"><img src="images/coopesantos.png" alt="paga-coopesantos"></div>
-											<div class="grid-item"><img src="images/movistar.png" alt="paga-movistar"></div>
+
+
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+											<i class='fas fa-satellite-dish	' style='font-size:3rem;color:#525252'></i>
+											<h3 style="font-size: 1.3rem;">TvSatelital & Cable </h3>
 										</div>
-									</ul>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/cabletica.png" alt="paga-cabletica"></div>
+												<div class="grid-item"><img src="images/telecable.png" alt="paga-telecable"></div>
+												<div class="grid-item"><img src="images/tigo.png" alt="paga-tigo"></div>
+												<div class="grid-item"><img src="images/sky.png" alt="paga-sky"></div>
+												<div class="grid-item"><img src="images/cablevision.png" alt="paga-cablevision"></div>
+												<div class="grid-item"><img src="images/clarotv.png" alt="paga-clarotv"></div>
+												<div class="grid-item"><img src="images/coopesantos.png" alt="paga-coopesantos"></div>
+												<div class="grid-item"><img src="images/movistar.png" alt="paga-movistar"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
-								<i class='fab fa-uniregistry' style='font-size:3rem;color:#525252'></i>
-								<h3>Pagos Universidad</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/ulatina.png"  alt="paga-universidad latina"></div>
-											<div class="grid-item"><img src="images/una.png"  alt="paga-una"></div>
-											<div class="grid-item"><img src="images/tec.png" alt="paga-tec"></div>
-											<div class="grid-item"><img src="images/ucr.png" alt="paga-ucr"></div>
-											<div class="grid-item"><img src="images/ufidelitas.png" alt="paga-universidad fidelitas"></div>
+
+
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fab fa-uniregistry' style='font-size:3rem;color:#525252'></i>
+										<h3 style="font-size: 1.3rem;">Pagos Universidad</h3>
 										</div>
-									</ul>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/ulatina.png"  alt="paga-universidad latina"></div>
+												<div class="grid-item"><img src="images/una.png"  alt="paga-una"></div>
+												<div class="grid-item"><img src="images/tec.png" alt="paga-tec"></div>
+												<div class="grid-item"><img src="images/ucr.png" alt="paga-ucr"></div>
+												<div class="grid-item"><img src="images/ufidelitas.png" alt="paga-universidad fidelitas"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Agua.png"  /> -->
-								<i class='fa fa-car' style='font-size:3rem;color:#525252'></i>
-								<h3>Seguridad Vial</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/cosevi.png" alt="paga-cosevi"></div>
-											<div class="grid-item"><img src="images/compass.png" alt="paga-compass"></div>
-										</div>
-									</ul>
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fa fa-car' style='font-size:3rem;color:#525252'></i>
+										<h3 style="font-size: 1.3rem;">Seguridad Vial</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/cosevi.png" alt="paga-cosevi"></div>
+												<div class="grid-item"><img src="images/compass.png" alt="paga-compass"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Tarjetas-de-Credito.png"  /> -->
-								<i class='fas fa-money-check-alt' style='font-size:3rem;color:#525252'></i>
-								<h3>Remesas</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/aya1.png"></div>
-											<div class="grid-item"><img src="images/aya.svg"></div>
-											<div class="grid-item"><img src="images/aya.jpg"></div>
-										</div>
-									</ul>
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fas fa-money-check-alt' style='font-size:3rem;color:#525252'></i>
+										<h3>Remesas</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/western_union.jpg"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Tarjetas-de-Credito.png"  /> -->
-								<i class='far fa-credit-card' style='font-size:3rem;color:#525252'></i>
-								<h3>Tarjetas</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/bn.png" alt="paga-banco nacional"></div>
-											<div class="grid-item"><img src="images/bac.png" alt="paga-BAC"></div>
-											<div class="grid-item"><img src="images/credisiman.png" alt="paga-credisiman"></div>
-											<div class="grid-item"><img src="images/credix.png" alt="paga-credix"></div>
-										</div>
-									</ul>
+
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='far fa-credit-card' style='font-size:3rem;color:#525252'></i>
+										<h3>Tarjetas</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/bn.png" alt="paga-banco nacional"></div>
+												<div class="grid-item"><img src="images/bac.png" alt="paga-BAC"></div>
+												<div class="grid-item"><img src="images/credisiman.png" alt="paga-credisiman"></div>
+												<div class="grid-item"><img src="images/credix.png" alt="paga-credix"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Bancos.png"  /> -->
-								<i class='fa fa-bank' style='font-size:3rem;color:#525252'></i>
-								<h3>Bancos</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/bn.png" alt="paga-banco nacional"></div>
-											<div class="grid-item"><img src="images/bac.png" alt="paga-BAC"></div>
-										</div>
-									</ul>
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fa fa-bank' style='font-size:3rem;color:#525252'></i>
+										<h3>Bancos</h3>
+									</div>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/bn.png" alt="paga-banco nacional"></div>
+												<div class="grid-item"><img src="images/bac.png" alt="paga-BAC"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
-						<section class="col-lg-3 col-md-4 col-sm-4 col-6">
-							<div class="box highlight">
-								<!-- <img id="imgServicios" src="images/Bancos.png"  /> -->
-								<i class='fas fa-landmark' style='font-size:3rem;color:#525252'></i>
-								<h3>Créditos</h3>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Servicios <i style="font-size:24px" class="fa">&#xf05a;</i></button>
-									<ul class="dropdown-menu">
-										<div class="grid-container">
-											<div class="grid-item"><img src="images/bn.png" alt="paga-banco nacional"></div>
-											<div class="grid-item"><img src="images/bac.png" alt="paga-BAC"></div>
+
+
+
+						<section class="col-lg-6 col-md-12 col-12">
+
+								<div class="row">
+									<div class="col-3">
+										<div id="icono">
+										<i class='fas fa-landmark' style='font-size:3rem;color:#525252'></i>
+										<h3>Créditos</h3>
 										</div>
-									</ul>
+									</div>
+									<div class="col-1">
+										<i class='fa fa-angle-right' style='font-size:3rem;color:#525252'></i>
+									</div>
+									<div class="col-8">
+
+											<div class="grid-container">
+												<div class="grid-item"><img src="images/bn.png" alt="paga-banco nacional"></div>
+												<div class="grid-item"><img src="images/bac.png" alt="paga-BAC"></div>
+											</div>
+
+									</div>
 								</div>
-							</div>
+
 						</section>
 
 					</div>
